@@ -62,7 +62,7 @@ p {
   display: flex;
   flex-direction: row;
 }
-.a1 {
+.studio {
   width: 49px;
   height: 16px;
   margin: 32px 50px 32px 93px;
@@ -72,10 +72,10 @@ p {
   color: #212121;
   box-sizing: content-box;
 }
-.a1:hover {
+.studio:hover {
   color: #2196f3;
 }
-.a2 {
+.portfolio {
   width: 77px;
   height: 16px;
   margin: 32px 50px;
@@ -85,7 +85,7 @@ p {
   color: #212121;
   box-sizing: content-box;
 }
-.a2:hover {
+.portfolio:hover {
   color: #2196f3;
 }
 .contacts {
@@ -193,11 +193,7 @@ p {
   width: 270px;
   height: 16px;
   font-weight: 700;
-  color: #212121;
-  width: 217px;
-  height: 16px;
   margin: 0px 30px 10px 0px;
-  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -418,6 +414,8 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 .f-tel {
+  width: 231px;
+  height: 21px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
