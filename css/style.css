@@ -412,6 +412,9 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.f-mail:hover {
+  color: #2196f3;
+}
 .f-tel {
   width: 231px;
   height: 21px;
@@ -422,4 +425,7 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
+}
+.f-tel:hover {
+  color: #2196f3;
 }
