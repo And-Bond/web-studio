@@ -44,7 +44,7 @@ a {
   font-style: normal;
   font-size: 26px;
   line-height: 31px;
-  width: 145px;
+  min-width: 145px;
   height: 31px;
   margin-left: 215px;
   margin-top: 24px;
@@ -65,6 +65,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .studio:hover {
   color: #2196f3;
@@ -78,6 +79,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .portfolio:hover {
   color: #2196f3;
@@ -91,6 +93,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .contacts:hover {
   color: #2196f3;
@@ -147,6 +150,9 @@ a {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.button:hover {
+  border-radius: 100px;
 }
 .button-text {
   width: 136px;
