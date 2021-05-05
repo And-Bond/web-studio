@@ -6,6 +6,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -14,6 +15,11 @@ body {
 a {
   text-decoration: none;
   color: black;
+  width: 0px;
+  height: 0px;
+}
+p {
+  display: inline-block;
 }
 .top-conteiner {
   display: flex;
@@ -56,32 +62,30 @@ a {
   display: flex;
   flex-direction: row;
 }
-.studio {
+.a1 {
   width: 49px;
   height: 16px;
-  margin-left: 93px;
-  margin-top: 32px;
+  margin: 32px 50px 32px 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
   box-sizing: content-box;
 }
-.studio:hover {
+.a1:hover {
   color: #2196f3;
 }
-.portfolio {
+.a2 {
   width: 77px;
   height: 16px;
-  margin-left: 50px;
-  margin-top: 32px;
+  margin: 32px 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
   box-sizing: content-box;
 }
-.portfolio:hover {
+.a2:hover {
   color: #2196f3;
 }
 .contacts {
