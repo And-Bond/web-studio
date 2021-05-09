@@ -128,7 +128,12 @@ p {
   width: 1600px;
   height: 600px;
   margin: 0px;
-  background-image: url(../img/Header.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/Header.jpg);
 }
 .efect {
   display: inline-block;
