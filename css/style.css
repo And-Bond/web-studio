@@ -6,7 +6,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid red;
   font-family: Roboto, sans-serif;
   margin: 0px;
   padding: 0px;
@@ -23,15 +22,6 @@ a {
 }
 ul {
   list-style: none;
-}
-.top-conteiner {
-  display: flex;
-  flex-direction: column;
-}
-
-.middle-container {
-  display: flex;
-  flex-direction: column;
 }
 .species {
   display: flex;
@@ -126,17 +116,19 @@ ul {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
-}
-.svg-message:hover {
-  fill: #2196f3;
+  margin: 2px 10px 0 0;
 }
 
+.mail-a:hover .svg-message {
+  fill: #2196f3;
+}
 .mail-a:hover {
   color: #2196f3;
 }
 .svg-tel {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 .tel-a {
   width: 142px;
@@ -154,6 +146,9 @@ ul {
 }
 .tel-a:hover {
   color: #2196f3;
+}
+.tel-a:hover .svg-tel {
+  fill: #2196f3;
 }
 /* Header */
 .top-header {
@@ -225,8 +220,8 @@ ul {
   height: 120px;
 }
 .svg-main {
-  width: 70px;
-  height: 70px;
+  width: 270px;
+  height: 120px;
 }
 
 .species-h {
@@ -471,14 +466,21 @@ ul {
   border: 1px solid rgba(175, 177, 184, 1);
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+}
+.client-link:hover {
+  border-color: #2196f3;
+}
+.client-link:hover .clients-svg-hover {
+  fill: #2196f3;
 }
 .svg-clients-1 {
-  width: 41px;
-  height: 47px;
+  width: 106px;
+  height: 60px;
 }
 .svg-clients-2 {
-  width: 40px;
-  height: 52px;
+  width: 106px;
+  height: 60px;
 }
 .svg-clients-3 {
   width: 45px;
@@ -635,4 +637,5 @@ ul {
 .footer-svg {
   width: 20px;
   height: 20px;
+  fill: #ffffff;
 }
