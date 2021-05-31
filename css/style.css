@@ -9,6 +9,7 @@ html {
   font-family: Roboto, sans-serif;
   margin: 0px;
   padding: 0px;
+  /* outline: 2px solid; */
 }
 body {
   font-family: Roboto, sans-serif;
@@ -27,14 +28,18 @@ ul {
   display: flex;
   flex-direction: row;
 }
-
-/* Top-line(nav) */
+:root {
+  --blue-color: #2196f3;
+}
+/*  Top-line(nav)   */
 .top-line {
+  /* position: fixed; */
   display: flex;
   flex-direction: row;
   width: 1600px;
   height: 80px;
   margin-bottom: 0px;
+  background-color: #fff;
 }
 .webstudio-1 {
   font-family: "Raleway", sans-serif;
@@ -61,6 +66,7 @@ ul {
   padding: 0px;
 }
 .studio {
+  position: relative;
   width: 49px;
   height: 16px;
   margin-left: 0px;
@@ -68,28 +74,54 @@ ul {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-  box-sizing: content-box;
 }
 .studio:hover {
   color: #2196f3;
 }
+.studio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.studio:hover::after {
+  opacity: 1;
+}
 .portfolio {
+  position: relative;
   width: 77px;
   height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-  box-sizing: content-box;
 }
 .portfolio:hover {
   color: #2196f3;
 }
+.portfolio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.portfolio:hover::after {
+  opacity: 1;
+}
 .contacts {
+  position: relative;
   width: 68px;
   height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -97,6 +129,20 @@ ul {
 }
 .contacts:hover {
   color: #2196f3;
+}
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.contacts:hover::after {
+  opacity: 1;
 }
 .mail-a {
   width: 164px;
@@ -201,7 +247,7 @@ ul {
   display: flex;
   flex-direction: row;
   width: 1170px;
-  height: 101px;
+  height: 251px;
   margin: 94px 215px 94px 215px;
   justify-content: space-between;
 }
@@ -248,29 +294,50 @@ ul {
 .what-we-do {
   width: 1170px;
   height: 386px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
   margin: 94px 215px;
-  display: inline-block;
 }
 
 .what-we-do-h {
-  width: 376px;
+  width: 1170px;
   height: 42px;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   color: #212121;
-  margin: 0px 397px 50px 397px;
+  display: flex;
+  justify-content: center;
 }
 .what-we-do-img {
   display: flex;
   flex-direction: row;
-}
-.what-we-do-img img {
-  width: 370px;
+  margin-top: 50px;
+  width: 1170px;
   height: 294px;
+  justify-content: space-between;
 }
-.img-2 {
-  margin: 0 30px;
+.black-img-div {
+  position: relative;
+}
+.black-img {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  margin-bottom: 3px;
 }
 /* Наша команда */
 .our-team {
