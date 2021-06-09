@@ -41,8 +41,8 @@
     <!-- Шапка -->
     <header class="top-header">
         <h1 class="efect">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">
-            <span class="button-text" >Заказать услугу</span>
+        <button class="button" type="button" data-open-modal>
+            Заказать услугу
         </button>
     </header>
     <!-- Особенности -->
@@ -121,7 +121,7 @@
         <!-- Изображения -->
         <ul class="images">
             <!-- Team1 -->
-            <li class="team team-1">
+            <li class="team">
                 <img src="./img/team1.jpg" alt="Игорь Демьяненко фото" width="270" height="260">
                 <p class="name-team-1">Игорь Демьяненко</p>
                 <p class="team-down-1">Product Designer</p>
@@ -366,5 +366,17 @@
             </ul>
         </section>
     </footer>
+    <div class="backdrop hidden" data-backdrop>
+        <div class="form-conteiner">
+            <form class="form">
+                <button class="button-close-form" data-close-modal>
+                    <svg class="svg-close-form">
+                        <use href="./icons/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/js.js"></script>
 </body>
 </html>
