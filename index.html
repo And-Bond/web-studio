@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 </head>
 <body>
+    <!-- <div class="main-conteiner"> -->
     <!-- Верхняя линия -->
     <nav class="top-line">
         <p class="webstudio-1">
@@ -365,7 +366,18 @@
                 </li>
             </ul>
         </section>
+        <form class="footer-form">
+            <label for="footer-input" class="footer-label">Подпишитесь на рассылку</label>
+            <input name="subscribe" id="footer-input" type="email" class="footer-input" placeholder="E-mail">
+            <button type="submit" class="footer-button">
+                Подписаться
+                <svg class="footer-button-svg">
+                    <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+            </button>
+        </form>
     </footer>
+    <!-- Форма -->
     <div class="backdrop hidden" data-backdrop>
         <div class="form-conteiner">
             <form class="form">
@@ -378,5 +390,6 @@
         </div>
     </div>
     <script src="./js/js.js"></script>
+    <!-- </div> -->
 </body>
 </html>

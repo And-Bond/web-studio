@@ -31,6 +31,12 @@ ul {
 :root {
   --blue-color: #2196f3;
 }
+/* .main-conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
 /*  Top-line(nav)   */
 .top-line {
   /* position: fixed; */
@@ -679,7 +685,7 @@ ul {
 .footer-social-list {
   width: 206px;
   height: 80px;
-  margin: 72px 878px 100px 70px;
+  margin: 72px 0 100px 70px;
 }
 .footer-icons-text {
   display: flex;
@@ -729,6 +735,83 @@ ul {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+.footer-form {
+  height: 86px;
+  width: 570px;
+  margin-left: 93px;
+  display: flex;
+  margin-top: 72px;
+  flex-wrap: wrap;
+}
+.footer-label {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  outline: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-right: 12px;
+}
+.footer-input::placeholder {
+  width: 47px;
+  height: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+.footer-button:hover {
+  background-color: #fff;
+  color: var(--blue-color);
+}
+.footer-button:hover .footer-button-svg {
+  fill: var(--blue-color);
+}
+.footer-button-svg {
+  fill: #fff;
+  width: 24px;
+  margin-left: 10px;
+  height: 24px;
 }
 /*  Form  */
 .backdrop {
