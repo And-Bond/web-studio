@@ -40,9 +40,9 @@
         </a>
     </nav>
     <!-- Шапка -->
-    <header class="top-header">
+    <header class="header">
         <h1 class="efect">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button" data-open-modal>
+        <button class="header_button" type="button" data-open-modal>
             Заказать услугу
         </button>
     </header>
@@ -381,10 +381,38 @@
     <div class="backdrop hidden" data-backdrop>
         <div class="form-conteiner">
             <form class="form">
-                <button class="button-close-form" data-close-modal>
+                <button class="form__button-close-form" data-close-modal>
                     <svg class="svg-close-form">
                         <use href="./icons/sprite.svg#icon-close"></use>
                     </svg>
+                </button>
+                <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="form_label">Имя
+                    <input name="user-name" type="text" class="form-input">
+                    <svg class="form-svg person-svg">
+                        <use href="./icons/sprite.svg#icon-form-person"></use>
+                    </svg>
+                </label>
+                <label class="form_label">Телефон
+                    <input name="user-phone" type="tel" class="form-input">
+                    <svg class="form-svg phone-svg">
+                        <use href="./icons/sprite.svg#icon-form-phone"></use>
+                    </svg>
+                </label>
+                <label class="form_label">Почта
+                    <input name="user-email" type="email" class="form-input">
+                    <svg class="form-svg email-svg">
+                        <use href="./icons/sprite.svg#icon-form-email"></use>
+                    </svg>
+                </label>
+                <label for="user-message" class="user-message">Коментарий</label>
+                <textarea id="user-message" class="form-texarea" name="user-message" placeholder="Введите текст"></textarea>
+                <label for="chekbox" class="form_chekbox_label">
+                    <input type="checkbox" class="form_chekbox" id="chekbox">
+                    <p class="chekbox_text">Соглашаюсь с рассылкой и принимаю<a href="#" class="text-decoration--blue chekbox_link">Условия договора</a> </p>
+                </label>
+                <button type="submit" class="form_button">
+                    Отправить
                 </button>
             </form>
         </div>
