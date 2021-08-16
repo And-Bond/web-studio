@@ -5,8 +5,10 @@
         "../sass/main.scss",
         "../sass/base-сбросы/_common.scss",
         "../sass/base-сбросы/_container.scss",
+        "../sass/base-сбросы/_btn.scss",
         "../sass/utils-переменные/_variables.scss",
-        "../sass/layout/_nav.scss"
+        "../sass/layout/_nav.scss",
+        "../sass/layout/_header.scss"
     ],
     "names": [],
     "file": "main.min.css"

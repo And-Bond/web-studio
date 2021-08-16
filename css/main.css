@@ -6,7 +6,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid;
 }
 
 h1,
@@ -19,6 +18,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -143,6 +143,13 @@ li {
   }
 }
 
+@media (min-width: 1600px) {
+  .nav__block-1 {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+}
+
 .nav__block-1__link {
   pointer-events: none;
   position: relative;
@@ -176,15 +183,8 @@ li {
   transition: var(--color-transition);
 }
 
-.blue--transition:hover,
-.blue--transition:focus {
+.blue--transition:hover, .blue--transition:focus {
   color: var(--blue-color);
-}
-@media (min-width: 1600px) {
-  .nav__block-1 {
-    margin-left: 93px;
-    margin-right: 305px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -241,7 +241,7 @@ li {
   }
 }
 
-.nav__block-2-links-2 {
+.nav__block-2__links-2 {
   display: flex;
   font-family: var(--main-font);
   font-style: normal;
@@ -257,6 +257,7 @@ li {
   .nav__block-2__links-2 {
     opacity: 1;
     position: static;
+    pointer-events: visible;
     width: 123px;
     height: 14px;
     font-size: 12px;
@@ -278,6 +279,7 @@ li {
   fill: var(--gray-color);
   transition: var(--fill-transition);
 }
+
 .blue--transition-special {
   transition: var(--color-transition);
 }
@@ -291,6 +293,7 @@ li {
 .blue--transition-special:focus .nav__svg {
   fill: var(--blue-color);
 }
+
 @media (min-width: 768px) {
   .nav__svg-message {
     width: 14px;
@@ -322,6 +325,7 @@ li {
     margin-right: 10px;
   }
 }
+
 .nav__menu-button {
   transition: var(--fill-transition);
 }
@@ -354,12 +358,7 @@ li {
 
 @media (min-width: 480px) {
   .header {
-    background-image: linear-gradient(
-        to top,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../img/Header-phone.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Header-phone.jpg);
     padding: 118px 60px 118px 60px;
     height: 400px;
   }
@@ -367,12 +366,7 @@ li {
 
 @media (min-width: 768px) {
   .header {
-    background-image: linear-gradient(
-        to top,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../img/Header-tablet.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Header-tablet.jpg);
     padding: 118px 204px 118px 204px;
     height: 400px;
   }
@@ -380,12 +374,7 @@ li {
 
 @media (min-width: 1600px) {
   .header {
-    background-image: linear-gradient(
-        to top,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../img/Header-desktop.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/Header-desktop.jpg);
     padding: 200px 452px 200px 452px;
     height: 600px;
   }
