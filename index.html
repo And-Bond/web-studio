@@ -38,7 +38,7 @@
             <use href="./icons/sprite.svg#icon-menu"></use>
         </svg>
     </nav>
-    <!-- <header class="header conteiner">
+    <header class="header conteiner">
         <h2 class="header-title">Эффективные решения для вашего бизнеса</h2>
         <button class="header-button btn" data-open-modal>Заказать услугу</button>
     </header>
@@ -47,31 +47,68 @@
         <form class="form">
             <button class="form__close-button" data-close-modal> 
                 <svg class="form__close-button-svg">
-                    <use href="./svg/sprite.svg#icon-close"></use>
+                    <use href="./icons/sprite.svg#icon-close"></use>
                 </svg>
             </button>
             <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
-            <label for="first-form-input" class="form__label">
-                Имя
+            <label for="first-form-input" class="form__label">Имя</label>
+                
                 <input id="first-form-input" type="text" class="form__input">
-                <svg class="form__svg">
-                    <use></use>
+                <svg class="form__svg form__svg-person">
+                    <use href="./icons/sprite.svg#icon-form-person"></use>
                 </svg>
-            <label for="second-form-input" class="form__label">
-                Телефон
+            <label for="second-form-input" class="form__label">Телефон</label>
+                
                 <input id="second-form-input" type="number" class="form__input">
-                <svg class="form__svg">
-                    <use></use>
+                <svg class="form__svg form__svg-phone">
+                    <use href="./icons/sprite.svg#icon-form-phone"></use>
                 </svg>
-            <label for="third-form-label" class="form__label">
-                Почта
+            <label for="third-form-label" class="form__label">Почта</label>
+                
                 <input id="third-form-label" type="email" class="form__input">
-                <svg class="form__svg">
-                    <use></use>
+                <svg class="form__svg form__svg-email">
+                    <use href="./icons/sprite.svg#icon-form-email"></use>
                 </svg>
+            <label for="texarea" class="form__label">Комментарий</label>
+                <textarea id="texarea" class="form__textarea" placeholder="Введите текст"></textarea>
+                <input class="form__checkbox" type="checkbox">
+                <p class="form__license-text">
+                    Соглашаюсь с рассылкой и принимаю <a href="#" class="form__license-text-decoration">Условия договора</a>
+                </p>
+                <button class="form__btn btn">Отправить</button>
         </form>
+    </div>
+    </div>
+    <section class="section conteiner">
+        <div class="section__block">
+            <svg class="section__svg">
+                <use href="./icons/sprite.svg#icon-antenna"></use>
+            </svg>
+            <h3 class="section__title">Внимание к деталям</h3>
+            <p class="section__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </div>
-    </div> -->
+        <div class="section__block">
+            <svg class="section__svg">
+                <use href="./icons/sprite.svg#icon-clock"></use>
+            </svg>
+            <h3 class="section__title">Пунктуальность</h3>
+            <p class="section__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </div>
+        <div class="section__block">
+            <svg class="section__svg">
+                <use href="./icons/sprite.svg#icon-diagram"></use>
+            </svg>
+            <h3 class="section__title">Планирование</h3>
+            <p class="section__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </div>
+        <div class="section__block">
+            <svg class="section__svg">
+                <use href="./icons/sprite.svg#icon-austronaut"></use>
+            </svg>
+            <h3 class="section__title">Современные технологии</h3>
+            <p class="section__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </div>
+    </section>
     <script src="./js/js.js"></script>
 </body>
 </html>
