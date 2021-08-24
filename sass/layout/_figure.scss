@@ -1,0 +1,114 @@
+.figure {
+  @media (min-width: 480px) {
+    padding: 60px 15px;
+    height: 519px;
+  }
+  @media (min-width: 768px) {
+    padding: 60px 15px;
+    height: 397px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 94px 215px;
+    height: 372px;
+  }
+}
+.figure__list {
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1600px) {
+    flex-direction: row;
+  }
+}
+.figure__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  @media (min-width: 480px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+.figure__list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--border-transition);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  @media (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 170px;
+    height: 92px;
+    margin-bottom: 0;
+  }
+  &:hover {
+    border-color: var(--blue-color);
+  }
+}
+.figure__list__link:hover > .figure__svg {
+  fill: var(--blue-color);
+}
+
+.figure__svg {
+  fill: #afb1b8;
+  transition: var(--fill-transition);
+  &__First {
+    width: 106px;
+    height: 60px;
+  }
+  &__Second {
+    width: 40px;
+    height: 52px;
+  }
+  &__Third {
+    width: 44px;
+    height: 40px;
+  }
+  &__Fourth {
+    width: 85px;
+    height: 40px;
+  }
+  &__Fifth {
+    width: 63px;
+    height: 45px;
+  }
+  &__Sixth {
+    width: 94px;
+    height: 44px;
+  }
+}
